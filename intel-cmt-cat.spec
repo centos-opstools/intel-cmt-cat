@@ -37,7 +37,7 @@
 
 Summary:            Provides command line interface to CMT, MBM, CAT, CDP and MBA technologies
 Name:               %{githubname}
-Release:            1%{?dist}
+Release:            2%{?dist}
 Version:            %{githubver}
 License:            BSD
 Group:              Development/Tools
@@ -167,6 +167,9 @@ install -m 0644 %{_builddir}/%{githubfull}/examples/c/CMT_MBM/monitor_app.c %{bu
 %doc %{_usrsrc}/%{githubfull}/LICENSE
 
 %changelog
+* Thu Feb 03 2022 Emma Foley <efoley@redhat.com> 1.0.1-2
+- Update release to trigger builds for CentOS Stream 8 and 9
+
 * Wed Jun 21 2017 Aaron Hetherington <aaron.hetherington@intel.com>, Marcel Cornu <marcel.d.cornu@intel.com> 1.0.1-1
 - Spec file bug fixes
 
